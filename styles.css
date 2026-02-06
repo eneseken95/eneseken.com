@@ -39,7 +39,7 @@ body {
 .topbar-inner {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 20px 24px;
+  padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,11 +90,27 @@ body {
   border-radius: 99px;
   background: #e9edf2;
   display: block;
+  transform-origin: center;
+  transition:
+    transform 0.22s ease,
+    opacity 0.18s ease;
+}
+
+.topbar-inner.menu-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.topbar-inner.menu-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.topbar-inner.menu-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .page {
   max-width: 1140px;
-  margin: 50px auto 56px;
+  margin: 36px auto 56px;
   padding: 0 22px;
 }
 
@@ -175,7 +191,7 @@ body {
 }
 
 .avatar {
-  width: min(290px, 32vw);
+  width: min(282px, 31vw);
   aspect-ratio: 1;
   border-radius: 50%;
   border: 2px solid transparent;
@@ -230,7 +246,7 @@ body {
 
 .app-icon {
   display: block;
-  width: 85px;
+  width: 80px;
   aspect-ratio: 1;
   border-radius: 22px;
   overflow: hidden;
@@ -390,7 +406,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    column-gap: 10px;
+    row-gap: 0;
   }
 
   .brand {
@@ -425,6 +442,7 @@ body {
 
   .topbar-inner.menu-open .main-menu {
     max-height: 180px;
+    margin-top: 6px;
     padding: 10px 0 8px;
     border-top-color: #2b2f35;
     opacity: 1;
@@ -442,6 +460,7 @@ body {
   .hero {
     flex-direction: column-reverse;
     padding: 22px 24px 24px;
+    gap: 20px;
     text-align: center;
     align-items: center;
   }
@@ -485,7 +504,7 @@ body {
   }
 
   .avatar {
-    width: min(192px, 48vw);
+    width: min(176px, 45vw);
   }
 
   .app-icons {
@@ -495,7 +514,7 @@ body {
   }
 
   .app-icon {
-    width: 68px;
+    width: 54px;
     border-radius: 16px;
     flex: 0 0 auto;
   }
@@ -528,5 +547,10 @@ body {
   .cta {
     width: 100%;
     font-size: 15px;
+  }
+
+  .cta {
+    min-height: 48px;
+    font-size: 14px;
   }
 }
