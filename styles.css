@@ -110,7 +110,7 @@ body {
 
 .page {
   max-width: 1140px;
-  margin: 36px auto 56px;
+  margin: 36px auto 46px;
   padding: 0 22px;
 }
 
@@ -251,6 +251,9 @@ body {
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 8px 18px rgba(255, 255, 255, 0.08);
   text-decoration: none;
 }
 
@@ -341,10 +344,13 @@ body {
 
 .cta {
   flex: 1;
-  border-radius: 22px;
+  border-radius: 18px;
   background: #fff;
   color: #0b0c0d;
   gap: 6px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 8px 18px rgba(255, 255, 255, 0.08);
 }
 
 .cta-icon {
@@ -504,7 +510,7 @@ body {
   }
 
   .avatar {
-    width: min(176px, 45vw);
+    width: min(168px, 43vw);
   }
 
   .app-icons {
