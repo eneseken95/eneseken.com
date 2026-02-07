@@ -428,7 +428,7 @@ body {
 
 @media (max-width: 980px) {
   #my-apps {
-    scroll-margin-top: 240px;
+    scroll-margin-top: 340px;
   }
 
   .topbar-inner {
