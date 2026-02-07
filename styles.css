@@ -26,6 +26,10 @@ body {
   background: var(--bg);
 }
 
+#my-apps {
+  scroll-margin-top: 96px;
+}
+
 .topbar {
   border-top: 1px solid #1c1f23;
   border-bottom: 1px solid #1c1f23;
@@ -183,6 +187,13 @@ body {
 .socials a[aria-label="GitHub"] img {
   width: 74%;
   height: 74%;
+}
+
+@media (min-width: 981px) {
+  .socials a[aria-label="GitHub"] img {
+    width: 78%;
+    height: 78%;
+  }
 }
 
 .socials a.appstore-link img {
@@ -535,11 +546,11 @@ body {
   }
 
   .footer-menu a {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .footer p {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .icons8-credit a {
