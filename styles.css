@@ -510,7 +510,7 @@ body {
   }
 
   .avatar {
-    width: min(168px, 43vw);
+    width: min(146px, 37vw);
   }
 
   .app-icons {
