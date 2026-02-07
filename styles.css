@@ -180,6 +180,11 @@ body {
   filter: brightness(0) invert(1);
 }
 
+.socials a[aria-label="GitHub"] img {
+  width: 74%;
+  height: 74%;
+}
+
 .socials a.appstore-link img {
   width: 72%;
   height: 72%;
